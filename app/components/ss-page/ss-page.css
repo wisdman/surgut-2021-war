@@ -1,0 +1,48 @@
+:host {
+  grid-area: 1 / 1 / -1 / -1;
+
+  box-sizing: border-box;
+  position: relative;
+
+  width: 100%;
+  max-width: 100%;
+
+  overflow: clip;
+  overflow-y: scroll;
+  
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+
+  /*box-sizing: border-box;
+  position: relative;
+  overflow: clip;
+  overflow-y: scroll;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  justify-content: stretch;
+  align-content: stretch;
+
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+
+  transition:
+    visibility 0s linear 0s,
+    opacity var(--ss-page-transition-duration) ease;*/
+}
+
+:host(:not(.active)) {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+:host::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}

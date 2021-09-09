@@ -1,0 +1,30 @@
+{
+  "name": "surgut-2021-war",
+  "version": "1.0.0",
+  "description": "Surgut SmartScreen about WARs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisdman/surgut-2021-war.git"
+  },
+  "homepage": "https://github.com/wisdman/surgut-2021-war",
+  "bugs": {
+    "url": "https://github.com/wisdman/surgut-2021-war/issues"
+  },
+  "author": "wisdman <wisdman@wisdman.io> (https://github.com/wisdman)",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -rf ./build/*",
+    "start": "electron .",
+    "pre-pack": "node ./pre-pack.js",
+    "pack-win32": "cd ./build && electron-packager ./ lit3d-shell --platform=win32 --arch=x64 --overwrite --out=../release",
+    "release": "set NODE_ENV=production&& npm run clean && npm run pre-pack && npm run pack-win32 && npm run clean && cd ./release && zip -r surgut-2021-war.zip lit3d-shell-win32-x64/ -x \"*.DS_Store\"",
+    "dev": "node server.js",
+    "ssl": "bash -c 'openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name prime256v1) -subj \"/C=RU/ST=UR/L=Ekaterinburg/O=Lit3d/OU=Surgut/CN=localhost/emailAddress=war@localhost\" -reqexts SAN -config <(cat /etc/ssl/openssl.cnf <(printf \"[SAN]\nsubjectAltName=DNS:localhost\")) -keyout ecdsa.key -out ecdsa.crt'"
+  },
+  "devDependencies": {
+    "electron": "^15.0.0-beta.3",
+    "electron-packager": "^15.3.0"
+  }
+}

@@ -1,0 +1,10 @@
+:host {
+  display: grid;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

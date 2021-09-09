@@ -1,0 +1,9 @@
+
+.title { order: 0; }
+.title ~ .title { order: 1; }
+.title ~ .title ~ .title { order: 3; }
+.title ~ .title ~ .title ~ .title { order: 5; }
+
+.card--operation, .card--war { order: 2; }
+.card--person, .card--salang { order: 4; }
+.card--book { order: 6; }

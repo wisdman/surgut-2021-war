@@ -1,0 +1,121 @@
+
+header {
+  position: relative;
+  box-sizing: border-box;
+
+  --spade: 20px;
+  width: calc(100% + var(--ss-red-bg-size) * 2 + var(--spade));
+  height: 500px;
+
+  margin-left: calc((var(--ss-red-bg-size) + var(--spade)) * -1);
+  margin-top: calc(var(--spade) * -1);
+
+  display: grid;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+header h1, header h2, header h3 {
+  margin: 0;
+
+  font-family: "TrixieCyr", sans-serif;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 1;
+}
+
+/* Operations */
+
+:host(.operation) header {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+:host(.operation) header img {
+  grid-area: 1 / 1 / -1 / -1;
+  
+}
+
+:host(.operation) header h1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+  justify-self: start;
+  align-self: start;
+
+  padding: 2px 5px 0 7px;
+  margin: -2px 0 0 -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px 3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 3px 0;
+}
+
+:host(.operation) header h2 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  justify-self: start;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 0 3px 0 3px;
+}
+
+:host(.operation) header h3 {
+  grid-area: span 1 / span 1 / -1 / -1;
+  justify-self: end;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px 0;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset -3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 0 0;
+}
+
+/* Person */
+
+:host(.person) header {
+  grid-template-columns: 360px 1fr;
+  grid-template-rows: 1fr;
+}
+
+:host(.person) header img {
+  aspect-ratio: 7 / 9;
+  z-index: 2;
+}
+
+:host(.person) header h1 {
+  justify-self: start;
+  align-self: center;
+  background-color: var(--ss-color-old);
+  z-index: 1;
+
+  padding: 20px 100px 20px 50px;
+  box-shadow: 3px 3px 13px  rgb(0 0 0 / .72);
+
+  --line-height: 2px;
+  --line-gap: 53px;
+
+  background: repeating-linear-gradient(
+    var(--ss-color-old),
+    var(--ss-color-old) var(--line-gap),
+    rgb(200 200 190 / 1) var(--line-gap),
+    rgb(200 200 190 / 1) calc(var(--line-height) + var(--line-gap))
+  );
+  background-position: 0 3px;
+
+  border-radius: 0 3px 3px 0;
+  text-align: left;
+}

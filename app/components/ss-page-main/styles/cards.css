@@ -1,0 +1,138 @@
+
+.card {
+  width: 100%;
+
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+
+  filter: drop-shadow(1px 1px 5px rgb(0 0 0 / .3));
+}
+
+.card > * {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card-image--top { object-position: top; }
+.card-image--bottom { object-position: bottom; }
+
+.card-title {
+  margin: 0;
+
+  font-family: "TrixieCyr", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.card-href {
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+
+  opacity: 0;
+  -webkit-tap-highlight-color: transparent;
+
+  z-index: 3;
+}
+
+/* Person card */
+
+.card--person {
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100%;
+  gap: 16px;
+
+  --line-height: 2px;
+  --line-gap: 30px;
+
+  background: repeating-linear-gradient(
+    var(--ss-color-old),
+    var(--ss-color-old) var(--line-gap),
+    rgb(200 200 190 / 1) var(--line-gap),
+    rgb(200 200 190 / 1) calc(var(--line-height) + var(--line-gap))
+  );
+  background-position: 0 10px;
+
+  border-radius: 0 3px 3px 0;
+}
+
+.card--person .card-image {
+  width: 100%;
+  aspect-ratio: 7 / 9;
+  object-fit: cover;
+  object-position: top;
+
+  border: 10px solid rgb(255 255 255 / 1);
+
+  transform: rotate(-3deg);
+}
+
+.card--person .card-title {
+  margin-top: 16px;
+}
+
+.card--person::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: -12px;
+  background-image: url(/assets/paper-clip.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 27px;
+  aspect-ratio: 27 / 76;
+}
+
+
+/* Card operation */
+
+.card--operation {
+  aspect-ratio: 8/3;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.card--operation .card-image {
+  grid-area: 1 / 1 / -1 / -1;
+  
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;  
+  filter: sepia(90%);
+
+  border-radius: 5px 20px 20px 20px;
+  -webkit-mask-image: radial-gradient(ellipse 66% 66% at 40% 50%, black 60%, transparent 90%);
+          mask-image: radial-gradient(ellipse 66% 66% at 40% 50%, black 60%, transparent 90%);
+}
+
+.card--operation .card-title {
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: start;
+  justify-self: start;
+
+  background-color: var(--ss-color-old);
+  color: var(--ss-text-color);
+
+  padding: 0 10px;
+  border-radius: 5px 0 0 0;
+  box-shadow: 1px 1px 3px rgb(255 255 255 / 1);
+}
+
+
+/* Hide empty */
+
+.card-years:empty,
+.card-title:empty,
+.card-image[src=""] {
+  display: none;
+}

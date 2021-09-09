@@ -1,0 +1,155 @@
+{
+  "title": "Афганистан 1979-1989",
+  "subtitles": [
+    "Боевые операции Афганской войны",
+    "Биографии жителей Сургура — \nветеранов войны в Афганистане"
+  ],
+  "class": "ss-2",
+  "items": [{
+    "id": 1,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Ageev_AY",
+    "title": "Агеев\nАлександр\nЮрьевич",
+    "image": "01.avif"
+  },{
+    "id": 2,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Egorov_SY",
+    "title": "Егоров\nСергей\nЮрьевич",
+    "image": "01.avif"
+  },{
+    "id": 3,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Zaitsev_OY",
+    "title": "Зайцев\nОлег\nЮрьевич",
+    "image": "01.avif"
+  },{
+    "id": 4,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Zyryanov_AV",
+    "title": "Зырянов\nАндрей\nВикторович",
+    "image": "01.avif"
+  },{
+    "id": 5,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Kablov_VA",
+    "title": "Каблов\nВячеслв\nАлександрович",
+    "image": "01.avif"
+  },{
+    "id": 6,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Kotrutse_VM",
+    "title": "Котруца\nВалерий\nМихайлович",
+    "image": "03.avif"
+  },{
+    "id": 7,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Nekrasov_DE",
+    "title": "Некрасов\nДмитрий\nЕвгеньевич",
+    "image": "01.avif"
+  },{
+    "id": 8,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Senin_AV",
+    "title": "Сенин\nАндрей\nВладимирович",
+    "image": "01.avif"
+  },{
+    "id": 9,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Taktarov_OS",
+    "title": "Тактаров\nОлег\nСергеевич",
+    "image": "01.avif"
+  },{
+    "id": 9,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Khokhulyak_AD",
+    "title": "Хохуляк\nАлександр\nДмитриевич",
+    "image": "01.avif"
+  },{
+    "id": 10,
+    "type": "landing",
+    "class": "person",
+    "dir": "bio/Yuferev_YV",
+    "title": "Юферев\nЮрий\nВитальевич",
+    "image": "01.avif"
+  },{
+    "id": 11,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/01_Storm-333",
+    "title": "Штурм дворца Амина",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 12,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/02_Entry_860",
+    "title": "Ввод 860-го полка",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 13,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/03_Panjshir",
+    "title": "Панджерские операции",
+    "image": "01.avif"
+  },{
+    "id": 14,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/04_Kunar",
+    "title": "«Кунарская» операция",
+    "image": "01.avif"
+  },{
+    "id": 15,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/05_Manevr",
+    "title": "Операция «Маневр»",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 16,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/06_Trap",
+    "title": "Операция «Западня»",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 17,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/07_Highway",
+    "title": "Операция «Магистраль»",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 18,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/08_Typhoon",
+    "title": "Операция «Тайфун»",
+    "image": "01.avif"
+  },{
+    "id": 19,
+    "type": "landing",
+    "class": "operation",
+    "dir": "ops/09_withdrawal",
+    "title": "Вывод войск из Афганистана",
+    "image": "01.avif",
+    "imageClass": "top"
+  }]
+}
