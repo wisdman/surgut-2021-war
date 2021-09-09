@@ -1,0 +1,137 @@
+{
+  "title": "<span>Локальные войны и вооруженные конфликты</span><span>XIX-XX вв.</span>",
+  "class": "ss-1",
+  "items": [{
+    "id": 1,
+    "type": "landing",
+    "class": "war",
+    "dir": "01_Laos_1960-1970",
+    "title": "Лаос",
+    "years": "1960-1970",
+    "image": "01.avif",
+    "mainimageposition": "top"
+  },{
+    "id": 2,
+    "type": "landing",
+    "class": "war",
+    "dir": "02_Vietnam_1961-1974",
+    "title": "Вьетнам",
+    "years": "1961-1974",
+    "image": "title.avif"
+  },{
+    "id": 3,
+    "type": "landing",
+    "class": "war",
+    "dir": "03_Cuba_1962",
+    "title": "Куба",
+    "years": "1962",
+    "image": "01.avif"
+  },{
+    "id": 4,
+    "type": "landing",
+    "class": "war",
+    "dir": "04_Algeria_1962-1964",
+    "title": "Алжир",
+    "years": "1962-1964",
+    "image": "01.avif"
+  },{
+    "id": 5,
+    "type": "landing",
+    "class": "war",
+    "dir": "05_Yemen_1962-1969",
+    "title": "Йемен",
+    "years": "1962-1969",
+    "image": "01.avif",
+    "mainimageposition": "top"
+  },{
+    "id": 6,
+    "type": "landing",
+    "class": "war",
+    "dir": "06_Egypt_1962-1975",
+    "title": "Египет",
+    "years": "1962-1975",
+    "image": "01.avif"
+  },{
+    "id": 7,
+    "type": "landing",
+    "class": "war",
+    "dir": "07_Mozambique_1967-1987",
+    "title": "Мозамбик",
+    "years": "1967-1987",
+    "image": "01.avif",
+    "mainimageposition": "bottom"
+  },{
+    "id": 8,
+    "type": "landing",
+    "class": "war",
+    "dir": "08_Damansky_1969",
+    "title": "Даманский",
+    "years": "1969",
+    "image": "01.avif"
+  },{
+    "id": 9,
+    "type": "landing",
+    "class": "war",
+    "dir": "09_Cambodia_1970",
+    "title": "Камбоджа",
+    "years": "1970",
+    "image": "01.avif",
+    "mainimageposition": "top"
+  },{
+    "id": 10,
+    "type": "landing",
+    "class": "war",
+    "dir": "10_Bangladesh_1972-1973",
+    "title": "Бангладеш",
+    "years": "1972-1973",
+    "image": "01.avif"
+  },{
+    "id": 11,
+    "type": "landing",
+    "class": "war",
+    "dir": "11_Angola_1975-1979",
+    "title": "Ангола",
+    "years": "1975-1979",
+    "image": "03.avif"
+  },{
+    "id": 12,
+    "type": "landing",
+    "class": "war",
+    "dir": "12_Ethiopia_1977-1979",
+    "title": "Эфиопия",
+    "years": "1977-1979",
+    "image": "07.avif",
+    "mainimageposition": "top"
+  },{
+    "id": 13,
+    "type": "landing",
+    "class": "war",
+    "dir": "13_Afghanistan_1979-1989",
+    "title": "Афганистан",
+    "years": "1979-1989",
+    "image": "24.avif",
+    "mainimageposition": "top"
+  },{
+    "id": 14,
+    "type": "landing",
+    "class": "war",
+    "dir": "14_Lebanon_1982",
+    "title": "Ливан",
+    "years": "1982",
+    "image": "18.avif"
+  },{
+    "id": 15,
+    "type": "landing",
+    "class": "salang",
+    "dir": "salang",
+    "title": "Историческая справка клуба воинов-интернационалистов «Саланг»",
+    "image": "title.avif"
+  },{
+    "id": 16,
+    "type": "book",
+    "class": "book",
+    "dir": "book",
+    "title": "Книга Памяти",
+    "image": "title.avif"
+  }]
+}
