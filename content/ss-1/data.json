@@ -1,5 +1,5 @@
 {
-  "title": "<span>Локальные войны и вооруженные конфликты</span><span>XIX-XX вв.</span>",
+  "title": "Локальные войны и\nвооруженные конфликты\nXIX-XX вв.",
   "class": "ss-1",
   "items": [{
     "id": 1,
@@ -9,7 +9,7 @@
     "title": "Лаос",
     "years": "1960-1970",
     "image": "01.avif",
-    "mainimageposition": "top"
+    "imageClass": "top"
   },{
     "id": 2,
     "type": "landing",
@@ -42,7 +42,7 @@
     "title": "Йемен",
     "years": "1962-1969",
     "image": "01.avif",
-    "mainimageposition": "top"
+    "imageClass": "top"
   },{
     "id": 6,
     "type": "landing",
@@ -59,7 +59,7 @@
     "title": "Мозамбик",
     "years": "1967-1987",
     "image": "01.avif",
-    "mainimageposition": "bottom"
+    "imageClass": "bottom"
   },{
     "id": 8,
     "type": "landing",
@@ -76,7 +76,7 @@
     "title": "Камбоджа",
     "years": "1970",
     "image": "01.avif",
-    "mainimageposition": "top"
+    "imageClass": "top"
   },{
     "id": 10,
     "type": "landing",
@@ -101,7 +101,7 @@
     "title": "Эфиопия",
     "years": "1977-1979",
     "image": "07.avif",
-    "mainimageposition": "top"
+    "imageClass": "top"
   },{
     "id": 13,
     "type": "landing",
@@ -110,7 +110,7 @@
     "title": "Афганистан",
     "years": "1979-1989",
     "image": "24.avif",
-    "mainimageposition": "top"
+    "imageClass": "top"
   },{
     "id": 14,
     "type": "landing",
@@ -125,10 +125,10 @@
     "class": "salang",
     "dir": "salang",
     "title": "Историческая справка клуба воинов-интернационалистов «Саланг»",
-    "image": "title.avif"
+    "image": "zero.avif"
   },{
     "id": 16,
-    "type": "book",
+    "type": "iframe",
     "class": "book",
     "dir": "book",
     "title": "Книга Памяти",

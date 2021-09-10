@@ -1,7 +1,7 @@
 import { AbstractComponent } from "../abstract/abstract.mjs"
 import { CSS, HTML, CONTENT } from "../abstract/utils.mjs"
 
-import { SSPageBook } from "../ss-page-book/ss-page-book.mjs"
+import { SSPageIFrame } from "../ss-page-iframe/ss-page-iframe.mjs"
 import { SSPageLanding } from "../ss-page-landing/ss-page-landing.mjs"
 import { SSPageMain } from "../ss-page-main/ss-page-main.mjs"
 
@@ -20,8 +20,8 @@ export class SSRouter extends AbstractComponent {
 
   #getPageClass = type => {
     switch(type) {
-      case "book":
-        return SSPageBook
+      case "iframe":
+        return SSPageIFrame
       case "landing":
         return SSPageLanding
       case "main":

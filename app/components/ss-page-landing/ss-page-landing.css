@@ -32,3 +32,15 @@ img {
   border-radius: 3px;
   object-fit: cover;
 }
+
+:host(.war) {
+  padding-left: calc(var(--ss-red-bg-size) - 20px);
+  padding-right: 20px;
+  padding-bottom: calc(var(--ss-red-bg-size) + 20px);
+}
+
+:host(.salang) {
+  padding-left: calc(var(--ss-red-bg-size) - 20px);
+  padding-right: 20px;
+  padding-bottom: calc(var(--ss-red-bg-size) + 20px);
+}

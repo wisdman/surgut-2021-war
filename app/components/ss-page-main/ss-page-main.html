@@ -1,6 +1,6 @@
 <template id="card">
   <div class="card card--${$.type} ${$.class ? `card--${$.class}` : ''}">
-    <img class="card-image ${$.imageClass ? `card-image--${$.imageClass}` : ''}" src="${$.image}">
+    <img class="card-image ${$.imageClass ? `card-image--${$.imageClass}` : ''}" src="${$.image || ''}">
     <h1 class="card-title">${$.title}</h1>
     <h2 class="card-years">${$.years ?? ""}</h2>
     <a class="card-href" href="${$.dir}">${$.dir}</a>

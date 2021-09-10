@@ -71,3 +71,79 @@ main ul.star li::marker { color: var(--ss-color-red); }
   min-height: var(--height);
   flex-grow: 1;
 }
+
+/* War */ 
+
+:host(.war) main {
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+:host(.war) main p, :host(.war) main ol,  :host(.war) main ul {
+  grid-column: span 3 / -1;
+}
+
+:host(.war) .gallary {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin: 25px 0;
+}
+
+:host(.war) .gallary img {
+  --height: 200px;
+  height: var(--height);
+  max-height: var(--height);
+  min-height: var(--height);
+  flex-grow: 1;
+}
+
+:host(.war) main p.full {
+  grid-column-start: 1;
+  padding-left: 40px;
+}
+
+/* Salang */ 
+
+:host(.salang) main {
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+:host(.salang) main p, :host(.salang) main ol,  :host(.salang) main ul {
+  grid-column: span 3 / -1;
+}
+
+:host(.salang) .gallary {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin: 25px 0;
+}
+
+:host(.salang) .gallary img {
+  --height: 200px;
+  height: var(--height);
+  max-height: var(--height);
+  min-height: var(--height);
+  flex-grow: 1;
+}
+
+:host(.salang) main p.full,  :host(.salang) main ul.full{
+  grid-column-start: 1;
+  padding-left: 40px;
+}
+
+:host(.salang) main ul.full.star {
+  padding-left: 66px;
+}

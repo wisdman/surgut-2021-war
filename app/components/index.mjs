@@ -1,6 +1,6 @@
 export { AbstractComponent } from "./abstract/abstract.mjs"
 export * from "./ss-page/ss-page.mjs"
-export * from "./ss-page-book/ss-page-book.mjs"
+export * from "./ss-page-iframe/ss-page-iframe.mjs"
 export * from "./ss-page-landing/ss-page-landing.mjs"
 export * from "./ss-page-main/ss-page-main.mjs"
 export * from "./ss-router/ss-router.mjs"

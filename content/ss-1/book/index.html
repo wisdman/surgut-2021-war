@@ -9,41 +9,39 @@
 	<link href="css/basic.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div></div>
-<div align="center" class="flipbook-viewport">
-	<div class="container">
-		<div class="flipbook">
-			<div style="background-image:url(pages/1.avif)"></div>
-			<div style="background-image:url(pages/2.avif)"></div>
-			<div style="background-image:url(pages/3.avif)"></div>
-			<div style="background-image:url(pages/4.avif)"></div>
-			<div style="background-image:url(pages/5.avif)"></div>
-			<div style="background-image:url(pages/6.avif)"></div>
-			<div style="background-image:url(pages/7.avif)"></div>
-			<div style="background-image:url(pages/8.avif)"></div>
-			<div style="background-image:url(pages/9.avif)"></div>
-			<div style="background-image:url(pages/10.avif)"></div>
-			<div style="background-image:url(pages/11.avif)"></div>
-			<div style="background-image:url(pages/12.avif)"></div>
-			<div style="background-image:url(pages/13.avif)"></div>
-			<div style="background-image:url(pages/14.avif)"></div>
-			<div style="background-image:url(pages/15.avif)"></div>
-			<div style="background-image:url(pages/16.avif)"></div>
-			<div style="background-image:url(pages/17.avif)"></div>
-			<div style="background-image:url(pages/18.avif)"></div>
-			<div style="background-image:url(pages/19.avif)"></div>
-			<div style="background-image:url(pages/20.avif)"></div>
-			<div style="background-image:url(pages/21.avif)"></div>
-			<div style="background-image:url(pages/22.avif)"></div>
-			<div style="background-image:url(pages/23.avif)"></div>
-			<div style="background-image:url(pages/24.avif)"></div>
-		</div>
-	</div>
-</div>	
+<div class="flipbook">
+	<div style="background-image:url(pages/1.avif)"></div>
+	<div style="background-image:url(pages/2.avif)"></div>
+	<div style="background-image:url(pages/3.avif)"></div>
+	<div style="background-image:url(pages/4.avif)"></div>
+	<div style="background-image:url(pages/5.avif)"></div>
+	<div style="background-image:url(pages/6.avif)"></div>
+	<div style="background-image:url(pages/7.avif)"></div>
+	<div style="background-image:url(pages/8.avif)"></div>
+	<div style="background-image:url(pages/9.avif)"></div>
+	<div style="background-image:url(pages/10.avif)"></div>
+	<div style="background-image:url(pages/11.avif)"></div>
+	<div style="background-image:url(pages/12.avif)"></div>
+	<div style="background-image:url(pages/13.avif)"></div>
+	<div style="background-image:url(pages/14.avif)"></div>
+	<div style="background-image:url(pages/15.avif)"></div>
+	<div style="background-image:url(pages/16.avif)"></div>
+	<div style="background-image:url(pages/17.avif)"></div>
+	<div style="background-image:url(pages/18.avif)"></div>
+	<div style="background-image:url(pages/19.avif)"></div>
+	<div style="background-image:url(pages/20.avif)"></div>
+	<div style="background-image:url(pages/21.avif)"></div>
+	<div style="background-image:url(pages/22.avif)"></div>
+	<div style="background-image:url(pages/23.avif)"></div>
+	<div style="background-image:url(pages/24.avif)"></div>
+</div>
 <script type="text/javascript">
+	const bodyStyle = getComputedStyle(document.body)
+	const width = Number.parseInt(bodyStyle.getPropertyValue("--flipbook-width") ?? "0")
+	const height = Number.parseInt(bodyStyle.getPropertyValue("--flipbook-height") ?? "0")
+	console.log(width, height)
 	$(".flipbook").turn({
-		width:922,
-		height:600,
+		width, height,
 		elevation: 50,
 		gradients: true,
 		autoCenter: true

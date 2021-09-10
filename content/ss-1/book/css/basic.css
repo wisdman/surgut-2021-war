@@ -1,49 +1,42 @@
-body{
-	overflow:hidden;
+html, body {
+  width: 100%;
+  min-width: 100vw;
+  max-width: 100vw;
+
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  overflow: clip;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+body {
+	--flipbook-width: 999;
+	--flipbook-height: 650;
+
+	margin: 0;
+  padding: 0;
 	background-image: url(/assets/bg.avif);
-	margin:0;
-	padding:0;
 }
 
-.flipbook-viewport{
-	overflow:hidden;
-	width:100%;
-	height:100%;
+.flipbook {
+	width: calc(var(--flipbook-width) * 1px);
+	height: calc(var(--flipbook-height) * 1px);
 }
 
-.flipbook-viewport .container{
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin:auto;
-}
-
-.flipbook-viewport .flipbook{
-	width:922px;
-	height:600px;
-	left:-461px;
-	top:-300px;
-}
-
-.flipbook-viewport .page{
-	width:461px;
-	height:600px;
+.flipbook .page {
+	width: calc(var(--flipbook-width) * 0.5px);
+	height: calc(var(--flipbook-height) * 1px);
+	
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
-}
 
-.flipbook .page{
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
-}
-
-.flipbook-viewport .page img{
-	-webkit-touch-callout: none;
-	user-select: none;
-	margin:0;
-}
-
-.flipbook-viewport .shadow{
-	transition: -ms-box-shadow 0.5s;
-	box-shadow:0 0 20px #ccc;
 }

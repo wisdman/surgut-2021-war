@@ -21,10 +21,10 @@ export class SSPageLanding extends SSPage {
       requestAnimationFrame(() =>{
         if (target.paused) {
           target.play()
-          target.classList.remove("paused")
+          target.parentNode.classList.remove("paused")
         } else {
           target.pause()
-          target.classList.add("paused")
+          target.parentNode.classList.add("paused")
           requestAnimationFrame(() =>target.currentTime = 0)
         }
       })
@@ -42,7 +42,7 @@ export class SSPageLanding extends SSPage {
         n.parentNode.insertBefore(videoWrapper, n)
         videoWrapper.appendChild(n)
 
-        n.classList.add("paused")
+        videoWrapper.classList.add("paused")
 
         if (n.hasAttribute("poster")) {
           const posterNode = new Image()
@@ -50,6 +50,7 @@ export class SSPageLanding extends SSPage {
           posterNode.classList.add("video-poster")
           videoWrapper.appendChild(posterNode)
         }
+
       }
     })
     this.shadowRoot.appendChild(template.content.cloneNode(true))

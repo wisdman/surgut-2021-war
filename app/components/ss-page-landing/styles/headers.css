@@ -119,3 +119,90 @@ header h1, header h2, header h3 {
   border-radius: 0 3px 3px 0;
   text-align: left;
 }
+
+/* War */
+
+:host(.war) header {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: calc(100% + var(--spade));
+  margin-left: 0;
+}
+
+
+:host(.war) header img {
+  grid-area: 1 / 1 / -1 / -1;
+  
+}
+
+:host(.war) header h1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+  justify-self: start;
+  align-self: start;
+
+  padding: 2px 5px 0 7px;
+  margin: -2px 0 0 -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px 3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 3px 0;
+}
+
+:host(.war) header h2 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  justify-self: start;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 0 3px 0 3px;
+}
+
+:host(.war) header h3 {
+  grid-area: span 1 / span 1 / -1 / -1;
+  justify-self: end;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px 0;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset -3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 0 0;
+}
+
+/* War */
+
+:host(.salang) header {
+  height: 300px;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;;
+  width: calc(100% + var(--spade));
+  margin-left: 0;
+
+  --line-height: 2px;
+  --line-gap: 52px;
+
+  background: repeating-linear-gradient(
+    var(--ss-color-old),
+    var(--ss-color-old) var(--line-gap),
+    rgb(200 200 190 / 1) var(--line-gap),
+    rgb(200 200 190 / 1) calc(var(--line-height) + var(--line-gap))
+  );
+  background-position: 0 3px;
+}
+
+:host(.salang) header h1 {
+  grid-area: 1 / 1 / -1 / -1;
+  justify-self: center;
+  align-self: center;
+
+  padding: 0px 100px;
+}
