@@ -18,7 +18,7 @@ module.exports = {
   titleBarStyle: "hidden",
 
   fullscreen: true,
-  // kiosk: true,
+  kiosk: true,
 
   webPreferences: {
     defaultEncoding: "utf8",
