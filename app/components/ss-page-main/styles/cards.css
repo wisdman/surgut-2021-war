@@ -237,7 +237,7 @@
 .card--book .card-image {
   width: 100%;
   transform-origin: center;
-  transform: rotate(5deg);
+  /*transform: rotate(5deg);*/
   border-radius: 3px;
 }
 
