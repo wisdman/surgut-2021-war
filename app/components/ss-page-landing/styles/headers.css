@@ -84,6 +84,61 @@ header h1, header h2, header h3 {
   border-radius: 3px 0 0 0;
 }
 
+/* Weapons */
+
+:host(.weapons) header {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+:host(.weapons) header img {
+  grid-area: 1 / 1 / -1 / -1;
+  
+}
+
+:host(.weapons) header h1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+  justify-self: start;
+  align-self: start;
+
+  padding: 2px 5px 0 7px;
+  margin: -2px 0 0 -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px 3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 3px 0;
+}
+
+:host(.weapons) header h2 {
+  grid-area: 2 / 1 / span 1 / span 1;
+  justify-self: start;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px -2px;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset 3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 0 3px 0 3px;
+}
+
+:host(.weapons) header h3 {
+  grid-area: span 1 / span 1 / -1 / -1;
+  justify-self: end;
+  align-self: end;
+  
+  padding: 7px 5px 2px 7px;
+  margin: 0 0 -2px 0;
+
+  background-color: var(--ss-color-old);
+  box-shadow: inset -3px -3px 3px rgb(255 255 255 / 0.9);
+
+  border-radius: 3px 0 0 0;
+}
+
 /* Person */
 
 :host(.person) header {
