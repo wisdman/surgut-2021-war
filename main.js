@@ -57,7 +57,7 @@ function startServer() {
     const workerPath = path.join(__dirname, "server.js")
     serverWorker = new Worker(workerPath, {workerData: LOCAL_SERVER_PORT })
     serverWorker.on("error", reject)
-    serverWorker.once("message", () => resolve())
+    serverWorker.once("message", () => resolve(serverWorker))
   })
 }
 
