@@ -2,6 +2,7 @@
   "title": "Афганистан 1979-1989",
   "subtitles": [
     "Боевые операции Афганской войны",
+    "Вооружение Афганской войны",
     "Биографии жителей Сургура — \nветеранов войны в Афганистане"
   ],
   "class": "ss-2",
@@ -149,6 +150,79 @@
     "class": "operation",
     "dir": "ops/09_withdrawal",
     "title": "Вывод войск из Афганистана",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 20,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/01_Armor",
+    "title": "Бронетехника",
+    "image": "01.avif"
+  },{
+    "id": 21,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/02_Artillery",
+    "title": "Артиллерия",
+    "image": "01.avif"
+  },{
+    "id": 22,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/03_Aviation",
+    "title": "Боевая авиация",
+    "image": "01.avif"
+  },{
+    "id": 23,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/04_BMP",
+    "title": "БМП",
+    "image": "01.avif"
+  },{
+    "id": 24,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/05_Communication",
+    "title": "Связь и обмундировани",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 25,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/06_Helicopters",
+    "title": "Вертолеты",
+    "image": "01.avif"
+  },{
+    "id": 26,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/07_Tanks",
+    "title": "Танки",
+    "image": "01.avif"
+  },{
+    "id": 27,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/08_Aircraft",
+    "title": "Военно-транспортная авиация",
+    "image": "01.avif"
+  },{
+    "id": 28,
+    "type": "landing",
+    "class": "weapons",
+    "dir": "weapons/09_Weapon",
+    "title": "Стрелковое оружие",
+    "image": "01.avif",
+    "imageClass": "top"
+  },{
+    "id": 29,
+    "type": "landing",
+    "class": "history",
+    "dir": "history",
+    "title": "История Афганской войны",
     "image": "01.avif",
     "imageClass": "top"
   }]

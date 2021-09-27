@@ -90,9 +90,9 @@
 }
 
 
-/* Card operation */
+/* Card operation, weapons, history */
 
-.card--operation {
+.card--operation, .card--weapons, .card--history {
   aspect-ratio: 8/3;
 
   grid-template-columns: 100%;
@@ -101,7 +101,7 @@
   align-items: stretch;
 }
 
-.card--operation .card-image {
+.card--operation .card-image, .card--weapons .card-image, .card--history .card-image {
   grid-area: 1 / 1 / -1 / -1;
   
   width: 100%;
@@ -115,7 +115,7 @@
           mask-image: radial-gradient(ellipse 66% 66% at 40% 50%, black 60%, transparent 90%);
 }
 
-.card--operation .card-title {
+.card--operation .card-title, .card--weapons .card-title, .card--history .card-title {
   grid-area: 1 / 1 / -1 / -1;
   align-self: start;
   justify-self: start;
