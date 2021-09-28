@@ -1,6 +1,6 @@
 {
   "name": "surgut-2021-war",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Surgut SmartScreen about WARs",
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "ssl": "bash -c 'openssl req -x509 -nodes -days 3650 -newkey ec:<(openssl ecparam -name prime256v1) -subj \"/C=RU/ST=UR/L=Ekaterinburg/O=Lit3d/OU=Surgut/CN=localhost/emailAddress=war@localhost\" -reqexts SAN -config <(cat /etc/ssl/openssl.cnf <(printf \"[SAN]\nsubjectAltName=DNS:localhost\")) -keyout ecdsa.key -out ecdsa.crt'"
   },
   "devDependencies": {
-    "electron": "^15.0.0-beta.3",
-    "electron-packager": "^15.3.0"
+    "electron": "^15.0.0",
+    "electron-packager": "^15.4.0"
   }
 }

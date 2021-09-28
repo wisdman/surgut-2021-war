@@ -239,6 +239,10 @@
   transform-origin: center;
   /*transform: rotate(5deg);*/
   border-radius: 3px;
+  height: 180px;
+
+  object-fit: cover;
+  object-position: 50% -100px;
 }
 
 /* Hide empty */
