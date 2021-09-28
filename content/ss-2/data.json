@@ -172,7 +172,8 @@
     "class": "weapons",
     "dir": "weapons/03_Aviation",
     "title": "Боевая авиация",
-    "image": "01.avif"
+    "image": "01.avif",
+    "imageClass": "top"
   },{
     "id": 23,
     "type": "landing",
