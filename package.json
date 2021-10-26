@@ -15,7 +15,7 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "clean": "rm -rf ./build/*",
+    "clean": "rm -rf ./build/* && rm -rf ./release/*",
     "start": "electron .",
     "pre-pack": "node ./pre-pack.js",
     "pack-win32": "cd ./build && electron-packager ./ lit3d-shell --platform=win32 --arch=x64 --overwrite --out=../release",
