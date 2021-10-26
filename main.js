@@ -80,7 +80,7 @@ async function initViewPorts() {
     win.removeMenu()
     
     win.loadURL(SS_URL)
-    win.webContents.setZoomFactor(0.75)
+    // win.webContents.setZoomFactor(0.75)
     win.show()
     
     windows.push(win)
